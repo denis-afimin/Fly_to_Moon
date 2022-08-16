@@ -389,36 +389,42 @@ body {
 
 .astronaut-1 {
   position: absolute;
-  width: 105px;
-  height: 150px;
   background-image: url("../img/astronaut.svg");
   background-repeat: no-repeat;
   background-size: 100px; }
 
 @-webkit-keyframes astro-fly {
   from {
+    width: 105px;
+    height: 150px;
     top: 350px;
     right: 100%; }
   to {
+    width: 105px;
+    height: 150px;
     top: 110px;
     right: 5%; } }
 
 @keyframes astro-fly {
   from {
+    width: 105px;
+    height: 150px;
     top: 350px;
     right: 100%; }
   to {
+    width: 105px;
+    height: 150px;
     top: 110px;
     right: 5%; } }
 
 .astronaut-1 {
   -webkit-animation-name: astro-fly;
   animation-name: astro-fly;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
   -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
