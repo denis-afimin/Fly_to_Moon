@@ -200,6 +200,14 @@ body {
   top: 370px;
   font-family: 'Permanent Marker', cursive;
   color: #2E0B5B; }
+  @media (max-width: 240px) {
+    .main-text {
+      width: 60px;
+      font-size: 14px;
+      top: 350px; } }
+  @media (max-width: 190px) {
+    .main-text {
+      display: none; } }
 
 .main__section__item-1 {
   margin-top: 53px; }
@@ -378,3 +386,39 @@ body {
   font-size: 10px;
   color: #000;
   font-weight: 300; }
+
+.astronaut-1 {
+  position: absolute;
+  width: 105px;
+  height: 150px;
+  background-image: url("../img/astronaut.svg");
+  background-repeat: no-repeat;
+  background-size: 100px; }
+
+@-webkit-keyframes astro-fly {
+  from {
+    top: 350px;
+    right: 100%; }
+  to {
+    top: 110px;
+    right: 5%; } }
+
+@keyframes astro-fly {
+  from {
+    top: 350px;
+    right: 100%; }
+  to {
+    top: 110px;
+    right: 5%; } }
+
+.astronaut-1 {
+  -webkit-animation-name: astro-fly;
+  animation-name: astro-fly;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
