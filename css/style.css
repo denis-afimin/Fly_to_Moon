@@ -387,12 +387,6 @@ body {
   color: #000;
   font-weight: 300; }
 
-.astronaut-1 {
-  position: absolute;
-  background-image: url("../img/astronaut.svg");
-  background-repeat: no-repeat;
-  background-size: 100px; }
-
 @-webkit-keyframes astro-fly {
   from {
     width: 105px;
@@ -417,14 +411,347 @@ body {
     top: 110px;
     right: 5%; } }
 
-.astronaut-1 {
+.astronaut {
+  position: absolute;
+  background-image: url("../img/astronaut.svg");
+  background-repeat: no-repeat;
+  background-size: 100px;
   -webkit-animation-name: astro-fly;
   animation-name: astro-fly;
   -webkit-animation-duration: 4s;
   animation-duration: 4s;
   -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
+
+@-webkit-keyframes flying_s {
+  0% {
+    background-image: url("../img/flying_s.svg");
+    background-size: 40px;
+    width: 44px;
+    height: 30px;
+    top: 432px;
+    right: 170px; }
+  2% {
+    background-image: url("../img/flying_s.svg");
+    background-size: 40px;
+    width: 44px;
+    height: 30px;
+    top: 432px;
+    right: 216px; }
+  5% {
+    background-image: url("../img/flying_s.svg");
+    background-size: 40px;
+    width: 44px;
+    height: 30px;
+    top: 432px;
+    right: 260px; }
+  10% {
+    background-image: url("../img/flying_s.svg");
+    background-size: 70px;
+    width: 73px;
+    height: 46px;
+    top: 485px;
+    right: 75%; }
+  20% {
+    background-image: url("../img/flying_s.svg");
+    background-size: 70px;
+    width: 73px;
+    height: 46px;
+    top: 530px;
+    right: 170px;
+    -webkit-transform: rotate(55deg);
+    transform: rotate(55deg); }
+  25%, 38%, 43%, 50% {
+    background-image: url("../img/flying_s.svg");
+    background-size: 70px;
+    background-position: 50% 0%;
+    width: 130px;
+    height: 200px;
+    top: 497px;
+    right: 205px;
+    -webkit-transform: rotate(55deg);
+    transform: rotate(55deg); }
+  30%, 40%, 45% {
+    background-image: url("../img/flying_s.svg"), url("../img/light.svg");
+    background-size: 70px, 130px;
+    background-position: 50% 0%, 50% 88%;
+    width: 130px;
+    height: 200px;
+    top: 497px;
+    right: 205px;
+    -webkit-transform: rotate(55deg);
+    transform: rotate(55deg); }
+  55% {
+    background-image: url("../img/flying_s.svg");
+    background-size: 70px;
+    background-position: 50% 0%;
+    width: 130px;
+    height: 200px;
+    top: 610px;
+    right: 10px; }
+  60%, 70%, 75%, 80% {
+    background-image: url("../img/flying_s.svg");
+    background-size: 70px;
+    background-position: 50% 0%;
+    width: 130px;
+    height: 200px;
+    top: 610px;
+    right: 120px;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg); }
+  67%, 73%, 77% {
+    background-image: url("../img/flying_s.svg"), url("../img/light.svg");
+    background-size: 70px, 130px;
+    background-position: 50% 0%, 50% 88%;
+    width: 130px;
+    height: 200px;
+    top: 610px;
+    right: 120px;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg); }
+  85%, 100% {
+    background-image: url("../img/flying_s.svg");
+    background-size: 50px;
+    width: 56px;
+    height: 36px;
+    top: 595px;
+    right: 20px; } }
+
+@keyframes flying_s {
+  0% {
+    background-image: url("../img/flying_s.svg");
+    background-size: 40px;
+    width: 44px;
+    height: 30px;
+    top: 432px;
+    right: 170px; }
+  2% {
+    background-image: url("../img/flying_s.svg");
+    background-size: 40px;
+    width: 44px;
+    height: 30px;
+    top: 432px;
+    right: 216px; }
+  5% {
+    background-image: url("../img/flying_s.svg");
+    background-size: 40px;
+    width: 44px;
+    height: 30px;
+    top: 432px;
+    right: 260px; }
+  10% {
+    background-image: url("../img/flying_s.svg");
+    background-size: 70px;
+    width: 73px;
+    height: 46px;
+    top: 485px;
+    right: 75%; }
+  20% {
+    background-image: url("../img/flying_s.svg");
+    background-size: 70px;
+    width: 73px;
+    height: 46px;
+    top: 530px;
+    right: 170px;
+    -webkit-transform: rotate(55deg);
+    transform: rotate(55deg); }
+  25%, 38%, 43%, 50% {
+    background-image: url("../img/flying_s.svg");
+    background-size: 70px;
+    background-position: 50% 0%;
+    width: 130px;
+    height: 200px;
+    top: 497px;
+    right: 205px;
+    -webkit-transform: rotate(55deg);
+    transform: rotate(55deg); }
+  30%, 40%, 45% {
+    background-image: url("../img/flying_s.svg"), url("../img/light.svg");
+    background-size: 70px, 130px;
+    background-position: 50% 0%, 50% 88%;
+    width: 130px;
+    height: 200px;
+    top: 497px;
+    right: 205px;
+    -webkit-transform: rotate(55deg);
+    transform: rotate(55deg); }
+  55% {
+    background-image: url("../img/flying_s.svg");
+    background-size: 70px;
+    background-position: 50% 0%;
+    width: 130px;
+    height: 200px;
+    top: 610px;
+    right: 10px; }
+  60%, 70%, 75%, 80% {
+    background-image: url("../img/flying_s.svg");
+    background-size: 70px;
+    background-position: 50% 0%;
+    width: 130px;
+    height: 200px;
+    top: 610px;
+    right: 120px;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg); }
+  67%, 73%, 77% {
+    background-image: url("../img/flying_s.svg"), url("../img/light.svg");
+    background-size: 70px, 130px;
+    background-position: 50% 0%, 50% 88%;
+    width: 130px;
+    height: 200px;
+    top: 610px;
+    right: 120px;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg); }
+  85%, 100% {
+    background-image: url("../img/flying_s.svg");
+    background-size: 50px;
+    width: 56px;
+    height: 36px;
+    top: 595px;
+    right: 20px; } }
+
+.flying_s {
+  position: absolute;
+  background-repeat: no-repeat;
+  -webkit-animation-name: flying_s;
+  animation-name: flying_s;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+/* 1-t
+	position: absolute;
+	background-image: url('../img/flying_s.svg');
+	background-repeat: no-repeat;
+	background-size: 40px;
+	width: 44px;
+	height: 30px;
+	top: 432px;
+	right: 170px;
+*/
+/* 2-d
+	position: absolute;
+	background-image: url('../img/flying_s.svg');
+	background-repeat: no-repeat;
+	background-size: 40px;
+	width: 44px;
+	height: 30px;
+	top: 432px;
+	right: 216px;
+*/
+/* 3-d
+	position: absolute;
+	background-image: url('../img/flying_s.svg');
+	background-repeat: no-repeat;
+	background-size: 40px;
+	width: 44px;
+	height: 30px;
+	top: 432px;
+	right: 260px;
+*/
+/* 4-
+	position: absolute;
+	background-image: url('../img/flying_s.svg');
+	background-repeat: no-repeat;
+	background-size: 70px;
+	width: 73px;
+	height: 46px;
+	top: 485px;
+	right: 75%;
+*/
+/* 5-
+	position: absolute;
+	background-image: url('../img/flying_s.svg');
+	background-repeat: no-repeat;
+	background-size: 70px;
+	width: 73px;
+	height: 46px;
+	top: 530px;
+	right: 170px;
+	transform: rotate(55deg);
+*/
+/* 6-
+	position: absolute;
+	background-image: url('../img/flying_s.svg');
+	background-repeat: no-repeat;
+	background-size: 70px;
+	background-position: 50% 0%;
+	width: 130px;
+	height: 200px;
+	top: 497px;
+	right: 205px;
+	transform: rotate(55deg);
+*/
+/* 7-
+	position: absolute;
+	background-image: url('../img/flying_s.svg'), url('../img/light.svg');
+	background-repeat: no-repeat;
+	background-size: 70px, 130px;
+	background-position: 50% 0%, 50% 88%;
+	width: 130px;
+	height: 200px;
+	top: 497px;
+	right: 205px;
+	transform: rotate(55deg);
+*/
+/* 8-
+		6(потухло), 7(засветилось), 6, 7, 6
+*/
+/* 9-
+	position: absolute;
+	background-image: url('../img/flying_s.svg');
+	background-repeat: no-repeat;
+	background-size: 70px;
+	background-position: 50% 0%;
+	width: 130px;
+	height: 200px;
+	top: 610px;
+	right: 10px;
+*/
+/* 10- 
+	position: absolute;
+	background-image: url('../img/flying_s.svg');
+	background-repeat: no-repeat;
+	background-size: 70px;
+	background-position: 50% 0%;
+	width: 130px;
+	height: 200px;
+	top: 610px;
+	right: 120px;
+	transform: rotate(-60deg);
+ */
+/* 11-
+	position: absolute;
+	background-image: url('../img/flying_s.svg'), url('../img/light.svg');
+	background-repeat: no-repeat;
+	background-size: 70px, 130px;
+	background-position: 50% 0%, 50% 88%;
+	width: 130px;
+	height: 200px;
+	top: 610px;
+	right: 120px;
+	transform: rotate(-60deg);
+*/
+/* 12-
+		10(потухло), 11(засветилось), 10, 11, 10
+*/
+/* 13-
+	position: absolute;
+	background-image: url('../img/flying_s.svg');
+	background-repeat: no-repeat;
+	background-size: 50px;
+	width: 56px;
+	height: 36px;
+	top: 595px;
+	right: 20px;
+*/
